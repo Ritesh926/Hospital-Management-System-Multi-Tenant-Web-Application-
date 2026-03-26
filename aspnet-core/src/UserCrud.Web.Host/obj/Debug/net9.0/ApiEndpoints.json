@@ -1,0 +1,1480 @@
+[
+  {
+    "ContainingType": "UserCrud.Authorization.Accounts.AccountAppService",
+    "Method": "IsTenantAvailable",
+    "RelativePath": "api/services/app/Account/IsTenantAvailable",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Authorization.Accounts.Dto.IsTenantAvailableInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Authorization.Accounts.Dto.IsTenantAvailableOutput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Authorization.Accounts.AccountAppService",
+    "Method": "Register",
+    "RelativePath": "api/services/app/Account/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Authorization.Accounts.Dto.RegisterInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Authorization.Accounts.Dto.RegisterOutput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Beds.BedCrudService",
+    "Method": "CreateBedAsync",
+    "RelativePath": "api/services/app/BedCrudService/CreateBed",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Beds.Dto.CreateBedDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Beds.Dto.BedDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Beds.BedCrudService",
+    "Method": "DeleteBedAsync",
+    "RelativePath": "api/services/app/BedCrudService/DeleteBed",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Beds.BedCrudService",
+    "Method": "GetAllBedsAsync",
+    "RelativePath": "api/services/app/BedCrudService/GetAllBeds",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UserCrud.Beds.Dto.BedDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Beds.BedCrudService",
+    "Method": "GetBedByIdAsync",
+    "RelativePath": "api/services/app/BedCrudService/GetBedById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Beds.Dto.BedDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Beds.BedCrudService",
+    "Method": "GetBedsByRoomIdAsync",
+    "RelativePath": "api/services/app/BedCrudService/GetBedsByRoomId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roomId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UserCrud.Beds.Dto.BedDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Beds.BedCrudService",
+    "Method": "UpdateBedAsync",
+    "RelativePath": "api/services/app/BedCrudService/UpdateBed",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Beds.Dto.UpdateBedDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Beds.Dto.BedDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Configuration.ConfigurationAppService",
+    "Method": "ChangeUiTheme",
+    "RelativePath": "api/services/app/Configuration/ChangeUiTheme",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Configuration.Dto.ChangeUiThemeInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Docters.DoctorCrudService",
+    "Method": "CreateDoctorAsync",
+    "RelativePath": "api/services/app/DoctorCrudService/CreateDoctor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Docters.Dto.CreateDocterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Docters.Dto.DocterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Docters.DoctorCrudService",
+    "Method": "DeleteDoctorAsync",
+    "RelativePath": "api/services/app/DoctorCrudService/DeleteDoctor",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Docters.DoctorCrudService",
+    "Method": "GetAllDoctorsAsync",
+    "RelativePath": "api/services/app/DoctorCrudService/GetAllDoctors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UserCrud.Docters.Dto.DocterDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Docters.DoctorCrudService",
+    "Method": "GetDoctorByIdAsync",
+    "RelativePath": "api/services/app/DoctorCrudService/GetDoctorById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Docters.Dto.DocterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Docters.DoctorCrudService",
+    "Method": "GetMyDoctorProfile",
+    "RelativePath": "api/services/app/DoctorCrudService/GetMyDoctorProfile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Docters.Dto.DocterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Docters.DoctorCrudService",
+    "Method": "UpdateDoctorAsync",
+    "RelativePath": "api/services/app/DoctorCrudService/UpdateDoctor",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Docters.Dto.UpdateDocterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Docters.Dto.DocterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.PatientAdmission.PatientAdmissionCrudService",
+    "Method": "ApproveAdmission",
+    "RelativePath": "api/services/app/PatientAdmissionCrudService/ApproveAdmission",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.PatientAdmission.PatientAdmissionCrudService",
+    "Method": "CreatePatientAdmissionAsync",
+    "RelativePath": "api/services/app/PatientAdmissionCrudService/CreatePatientAdmission",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.PatientAdmission.Dto.CreatePatientAdmissionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.PatientAdmission.Dto.PatientAdmissionDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.PatientAdmission.PatientAdmissionCrudService",
+    "Method": "DeletePatientAdmissionAsync",
+    "RelativePath": "api/services/app/PatientAdmissionCrudService/DeletePatientAdmission",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.PatientAdmission.PatientAdmissionCrudService",
+    "Method": "GetAllPatientAdmissionsAsync",
+    "RelativePath": "api/services/app/PatientAdmissionCrudService/GetAllPatientAdmissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UserCrud.PatientAdmission.Dto.PatientAdmissionDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.PatientAdmission.PatientAdmissionCrudService",
+    "Method": "GetMyPatients",
+    "RelativePath": "api/services/app/PatientAdmissionCrudService/GetMyPatients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UserCrud.PatientAdmission.Dto.PatientAdmissionDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.PatientAdmission.PatientAdmissionCrudService",
+    "Method": "GetPatientAdmissionByIdAsync",
+    "RelativePath": "api/services/app/PatientAdmissionCrudService/GetPatientAdmissionById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.PatientAdmission.Dto.PatientAdmissionDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.PatientAdmission.PatientAdmissionCrudService",
+    "Method": "RejectAdmission",
+    "RelativePath": "api/services/app/PatientAdmissionCrudService/RejectAdmission",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "reason",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.PatientAdmission.PatientAdmissionCrudService",
+    "Method": "UpdatePatientAdmissionAsync",
+    "RelativePath": "api/services/app/PatientAdmissionCrudService/UpdatePatientAdmission",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.PatientAdmission.Dto.UpdatePatientAdmissionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.PatientAdmission.Dto.PatientAdmissionDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Patients.PatientCrudService",
+    "Method": "CreatePatientAsync",
+    "RelativePath": "api/services/app/PatientCrudService/CreatePatient",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Patients.Dto.CreatePatientDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Patients.Dto.PatientDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Patients.PatientCrudService",
+    "Method": "DeletePatientAsync",
+    "RelativePath": "api/services/app/PatientCrudService/DeletePatient",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Patients.PatientCrudService",
+    "Method": "GetAllPatientsAsync",
+    "RelativePath": "api/services/app/PatientCrudService/GetAllPatients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UserCrud.Patients.Dto.PatientDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Patients.PatientCrudService",
+    "Method": "GetPatientByIdAsync",
+    "RelativePath": "api/services/app/PatientCrudService/GetPatientById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Patients.Dto.PatientDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Patients.PatientCrudService",
+    "Method": "UpdatePatientAsync",
+    "RelativePath": "api/services/app/PatientCrudService/UpdatePatient",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Patients.Dto.UpdatePattientDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Patients.Dto.PatientDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Roles.RoleAppService",
+    "Method": "CreateAsync",
+    "RelativePath": "api/services/app/Role/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Roles.Dto.CreateRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Roles.Dto.RoleDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Roles.RoleAppService",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/services/app/Role/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abp.Application.Services.AsyncCrudAppService\u00608[[UserCrud.Authorization.Roles.Role, UserCrud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.Roles.Dto.RoleDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[UserCrud.Roles.Dto.PagedRoleResultRequestDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.Roles.Dto.CreateRoleDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.Roles.Dto.RoleDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAsync",
+    "RelativePath": "api/services/app/Role/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Roles.Dto.RoleDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abp.Application.Services.AsyncCrudAppService\u00608[[UserCrud.Authorization.Roles.Role, UserCrud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.Roles.Dto.RoleDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[UserCrud.Roles.Dto.PagedRoleResultRequestDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.Roles.Dto.CreateRoleDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.Roles.Dto.RoleDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/services/app/Role/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sorting",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SkipCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxResultCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Abp.Application.Services.Dto.PagedResultDto\u00601[[UserCrud.Roles.Dto.RoleDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Roles.RoleAppService",
+    "Method": "GetAllPermissions",
+    "RelativePath": "api/services/app/Role/GetAllPermissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Abp.Application.Services.Dto.ListResultDto\u00601[[UserCrud.Roles.Dto.PermissionDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Roles.RoleAppService",
+    "Method": "GetRoleForEdit",
+    "RelativePath": "api/services/app/Role/GetRoleForEdit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Roles.Dto.GetRoleForEditOutput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Roles.RoleAppService",
+    "Method": "GetRolesAsync",
+    "RelativePath": "api/services/app/Role/GetRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Permission",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Abp.Application.Services.Dto.ListResultDto\u00601[[UserCrud.Roles.Dto.RoleListDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Roles.RoleAppService",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/services/app/Role/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Roles.Dto.RoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Roles.Dto.RoleDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Rooms.RoomDtoService",
+    "Method": "CreateRoomAsync",
+    "RelativePath": "api/services/app/RoomDtoService/CreateRoom",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Rooms.Dto.createRoomDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Rooms.Dto.RoomDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Rooms.RoomDtoService",
+    "Method": "DeleteRoomAsync",
+    "RelativePath": "api/services/app/RoomDtoService/DeleteRoom",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Rooms.RoomDtoService",
+    "Method": "GetAllRoomsAsync",
+    "RelativePath": "api/services/app/RoomDtoService/GetAllRooms",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UserCrud.Rooms.Dto.RoomDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Rooms.RoomDtoService",
+    "Method": "GetRoomByIdAsync",
+    "RelativePath": "api/services/app/RoomDtoService/GetRoomById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Rooms.Dto.RoomDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Rooms.RoomDtoService",
+    "Method": "UpdateRoomAsync",
+    "RelativePath": "api/services/app/RoomDtoService/UpdateRoom",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Rooms.Dto.updateRoomDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Rooms.Dto.RoomDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Sessions.SessionAppService",
+    "Method": "GetCurrentLoginInformations",
+    "RelativePath": "api/services/app/Session/GetCurrentLoginInformations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Sessions.Dto.GetCurrentLoginInformationsOutput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.MultiTenancy.TenantAppService",
+    "Method": "CreateAsync",
+    "RelativePath": "api/services/app/Tenant/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.MultiTenancy.Dto.CreateTenantDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.MultiTenancy.Dto.TenantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.MultiTenancy.TenantAppService",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/services/app/Tenant/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abp.Application.Services.AsyncCrudAppService\u00608[[UserCrud.MultiTenancy.Tenant, UserCrud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.MultiTenancy.Dto.TenantDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[UserCrud.MultiTenancy.Dto.PagedTenantResultRequestDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.MultiTenancy.Dto.CreateTenantDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.MultiTenancy.Dto.TenantDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAsync",
+    "RelativePath": "api/services/app/Tenant/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.MultiTenancy.Dto.TenantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abp.Application.Services.AsyncCrudAppService\u00608[[UserCrud.MultiTenancy.Tenant, UserCrud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.MultiTenancy.Dto.TenantDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[UserCrud.MultiTenancy.Dto.PagedTenantResultRequestDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.MultiTenancy.Dto.CreateTenantDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.MultiTenancy.Dto.TenantDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/services/app/Tenant/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsActive",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sorting",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SkipCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxResultCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Abp.Application.Services.Dto.PagedResultDto\u00601[[UserCrud.MultiTenancy.Dto.TenantDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abp.Application.Services.AsyncCrudAppService\u00608[[UserCrud.MultiTenancy.Tenant, UserCrud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.MultiTenancy.Dto.TenantDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[UserCrud.MultiTenancy.Dto.PagedTenantResultRequestDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.MultiTenancy.Dto.CreateTenantDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.MultiTenancy.Dto.TenantDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/services/app/Tenant/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.MultiTenancy.Dto.TenantDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.MultiTenancy.Dto.TenantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Users.UserAppService",
+    "Method": "Activate",
+    "RelativePath": "api/services/app/User/Activate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Abp.Application.Services.Dto.EntityDto\u00601[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Users.UserAppService",
+    "Method": "ChangeLanguage",
+    "RelativePath": "api/services/app/User/ChangeLanguage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Users.Dto.ChangeUserLanguageDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Users.UserAppService",
+    "Method": "ChangePassword",
+    "RelativePath": "api/services/app/User/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Users.Dto.ChangePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Users.UserAppService",
+    "Method": "CreateAsync",
+    "RelativePath": "api/services/app/User/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Users.Dto.CreateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Users.Dto.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Users.UserAppService",
+    "Method": "DeActivate",
+    "RelativePath": "api/services/app/User/DeActivate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Abp.Application.Services.Dto.EntityDto\u00601[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Users.UserAppService",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/services/app/User/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abp.Application.Services.AsyncCrudAppService\u00608[[UserCrud.Authorization.Users.User, UserCrud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.Users.Dto.UserDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[UserCrud.Users.Dto.PagedUserResultRequestDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.Users.Dto.CreateUserDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.Users.Dto.UserDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAsync",
+    "RelativePath": "api/services/app/User/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Users.Dto.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Abp.Application.Services.AsyncCrudAppService\u00608[[UserCrud.Authorization.Users.User, UserCrud.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.Users.Dto.UserDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[UserCrud.Users.Dto.PagedUserResultRequestDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.Users.Dto.CreateUserDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserCrud.Users.Dto.UserDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null],[Abp.Application.Services.Dto.EntityDto\u00601[[System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/services/app/User/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsActive",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sorting",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SkipCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxResultCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Abp.Application.Services.Dto.PagedResultDto\u00601[[UserCrud.Users.Dto.UserDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Users.UserAppService",
+    "Method": "GetRoles",
+    "RelativePath": "api/services/app/User/GetRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Abp.Application.Services.Dto.ListResultDto\u00601[[UserCrud.Roles.Dto.RoleDto, UserCrud.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Users.UserAppService",
+    "Method": "ResetPassword",
+    "RelativePath": "api/services/app/User/ResetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Users.Dto.ResetPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Users.UserAppService",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/services/app/User/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "UserCrud.Users.Dto.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Users.Dto.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserCrud.Controllers.TokenAuthController",
+    "Method": "Authenticate",
+    "RelativePath": "api/TokenAuth/Authenticate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "UserCrud.Models.TokenAuth.AuthenticateModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserCrud.Models.TokenAuth.AuthenticateResultModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

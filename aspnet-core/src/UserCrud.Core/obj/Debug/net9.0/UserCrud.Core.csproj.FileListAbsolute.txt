@@ -1,0 +1,13 @@
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\bin\Debug\net9.0\UserCrud.Core.deps.json
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\bin\Debug\net9.0\UserCrud.Core.dll
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\bin\Debug\net9.0\UserCrud.Core.pdb
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\obj\Debug\net9.0\UserCrud.Core.csproj.AssemblyReference.cache
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\obj\Debug\net9.0\UserCrud.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\obj\Debug\net9.0\UserCrud.Core.AssemblyInfoInputs.cache
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\obj\Debug\net9.0\UserCrud.Core.AssemblyInfo.cs
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\obj\Debug\net9.0\UserCrud.Core.csproj.CoreCompileInputs.cache
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\obj\Debug\net9.0\UserCrud.Core.sourcelink.json
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\obj\Debug\net9.0\UserCrud.Core.dll
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\obj\Debug\net9.0\refint\UserCrud.Core.dll
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\obj\Debug\net9.0\UserCrud.Core.pdb
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Core\obj\Debug\net9.0\ref\UserCrud.Core.dll

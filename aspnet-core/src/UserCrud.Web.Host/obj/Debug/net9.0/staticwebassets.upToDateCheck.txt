@@ -1,0 +1,4 @@
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Web.Host\wwwroot\swagger\ui\abp.swagger.js
+C:\Users\kumar\source\repos\HMS\aspnet-core\src\UserCrud.Web.Host\wwwroot\swagger\ui\abp.js
+wwwroot\swagger\ui\abp.js
+wwwroot\swagger\ui\abp.swagger.js

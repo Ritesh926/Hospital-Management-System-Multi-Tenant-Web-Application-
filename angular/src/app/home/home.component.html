@@ -1,0 +1,316 @@
+﻿<section class="content px-2">
+    <div class="container-fluid">
+
+        <!-- Welcome Alert -->
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-info alert-dismissible">
+                    <h6>
+                        <i class="icon fa fa-hospital"></i>
+                        Welcome to Hospital Management Dashboard.
+                        Click any box below to view details.
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- Small Boxes Row -->
+        <div class="row">
+
+            <!-- Doctors -->
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-info" style="cursor:pointer" (click)="selectedSection='doctors'">
+                    <div class="inner">
+                        <h3>{{ totalDoctors }}</h3>
+                        <p>Total Doctors</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Patients -->
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-success" style="cursor:pointer" (click)="selectedSection='patients'">
+                    <div class="inner">
+                        <h3>{{ totalPatients }}</h3>
+                        <p>Total Patients</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-user-injured"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Admissions -->
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-warning" style="cursor:pointer" (click)="selectedSection='admissions'">
+                    <div class="inner">
+                        <h3>{{ totalAdmissions }}</h3>
+                        <p>Total Admissions</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-hospital-user"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beds -->
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-primary" style="cursor:pointer" (click)="selectedSection='availableBeds'">
+                    <div class="inner">
+                        <h3>{{ availableBeds }}</h3>
+                        <p>Available Beds</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Info Boxes Row -->
+        <div class="row">
+
+            <!-- Total Rooms -->
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box" style="cursor:pointer" (click)="selectedSection='rooms'">
+
+                    <span class="info-box-icon bg-primary elevation-1">
+                        <i class="fas fa-door-open"></i>
+                    </span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">Total Rooms</span>
+                        <span class="info-box-number">{{ totalRooms }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Beds -->
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box" style="cursor:pointer" (click)="selectedSection='beds'">
+
+                    <span class="info-box-icon bg-warning elevation-1">
+                        <i class="fas fa-procedures"></i>
+                    </span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">Total Beds</span>
+                        <span class="info-box-number">{{ totalBeds }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Occupied Beds -->
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box" style="cursor:pointer" (click)="selectedSection='occupiedBeds'">
+
+                    <span class="info-box-icon bg-danger elevation-1">
+                        <i class="fas fa-bed"></i>
+                    </span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text">Occupied Beds</span>
+                        <span class="info-box-number">
+                            {{ totalBeds - availableBeds }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Dynamic Data Section -->
+        <div class="row" *ngIf="selectedSection">
+            <div class="col-md-12">
+                <div class="card">
+
+                    <div class="card-header">
+                        <h3 class="card-title text-capitalize">
+                            {{ selectedSection }} Details
+                        </h3>
+
+                        <div class="card-tools">
+                            <button class="btn btn-sm btn-danger" (click)="selectedSection=null">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card-body table-responsive">
+
+                        <!-- Doctors Table -->
+                        <table *ngIf="selectedSection==='doctors'" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Doctor Code</th>
+                                    <th>Doctor Name</th>
+                                    <th>Doctor Specialization</th>
+                                    <th>Phone Number</th>
+                                    <th>Available</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let d of doctors">
+                                    <td>{{ d.docterCode }}</td>
+                                    <td>{{ d.fullName }}</td>
+                                    <td>{{ d.specializationName }}</td>
+                                    <td>{{ d.phoneNumber }}</td>
+                                    <td>
+                                        <span [ngClass]="d.isAvailble ? 'text-success' : 'text-danger'">
+                                            {{ d.isAvailble ? ('Yes' | localize) : ('No' | localize) }}
+                                        </span>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Patients Table -->
+                        <table *ngIf="selectedSection==='patients'" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Patient Code</th>
+                                    <th>Patient Photo</th>
+                                    <th>Patient Name</th>
+                                    <th>Patient Gender</th>
+                                    <th> Phone Number</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let p of patients">
+                                    <td>{{ p.patientCode }}</td>
+                                    <td>
+                                        <ng-container *ngIf="p.photosBase64 && p.photosBase64.length > 0">
+                                            <img [src]="'data:image/png;base64,' + p.photosBase64[0]" width="50"
+                                                height="50" style="object-fit: cover; border-radius: 50%;"
+                                                class="mr-1" />
+                                        </ng-container>
+
+                                        <span *ngIf="!p.photosBase64 || p.photosBase64.length === 0">
+                                            No Image
+                                        </span>
+                                    </td>
+                                    <td>{{ p.firstName }} {{ p.lastName }}</td>
+                                    <td>{{ p.genderName }}</td>
+                                    <td>{{ p.phoneNumber }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Admissions Table -->
+                        <table *ngIf="selectedSection==='admissions'" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Patient Name</th>
+                                    <th>Doctor Name</th>
+                                    <th>Diagnosis</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let a of admissions">
+                                    <td>{{ a.patient?.firstName }}</td>
+                                    <td>{{ a.doctor?.fullName }}</td>
+                                    <td>{{ a.diagnosis }}</td>
+                                    <td>{{ a.status }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Available Beds Table -->
+                        <table *ngIf="selectedSection==='availableBeds'" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Bed Number</th>
+                                    <th>Room Number</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let b of availableBedsList">
+                                    <td>{{ b.bedNumber }}</td>
+                                    <td>{{ b.room?.roomNumber }}</td>
+                                    <td class="text-success">Available</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <!-- Beds Table -->
+                        <table *ngIf="selectedSection==='beds'" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Bed Number</th>
+                                    <th>Room Number</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let b of beds">
+                                    <td>{{ b.bedNumber }}</td>
+                                    <td>{{ b.room?.roomNumber }}</td>
+                                    <td>
+                                        <span [ngClass]="b.isOccupied ? 'text-danger' : 'text-success'">
+                                            {{ b.isOccupied ? 'Occupied' : 'Available' }}
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Rooms Table -->
+                        <table *ngIf="selectedSection==='rooms'" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Room Number</th>
+                                    <th>Room Type</th>
+                                    <th>Total Beds</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let r of rooms">
+                                    <td>{{ r.roomNumber }}</td>
+                                    <td>{{ r.roomTypeName }}</td>
+                                    <td>{{ r.totalBeds }}</td>
+                                    <td>
+                                        <span [ngClass]="r.isActive ? 'text-success' : 'text-danger'">
+                                            {{ r.isActive ? 'Active' : 'Inactive' }}
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Occupied Beds Table -->
+                        <table *ngIf="selectedSection==='occupiedBeds'" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Bed Number</th>
+                                    <th>Room Number</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let b of occupiedBeds">
+                                    <td>{{ b.bedNumber }}</td>
+                                    <td>{{ b.room?.roomNumber }}</td>
+                                    <td class="text-danger">Occupied</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

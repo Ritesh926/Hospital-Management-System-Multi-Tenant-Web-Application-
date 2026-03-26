@@ -1,0 +1,103 @@
+<form class="form-horizontal" autocomplete="off" #editPatientForm="ngForm" (ngSubmit)="save()">
+
+  <!-- Modal Header -->
+  <abp-modal-header [title]="'EditPatient' | localize" (onCloseClick)="bsModalRef.hide()">
+  </abp-modal-header>
+
+  <div class="modal-body">
+
+    <!-- Patient Code -->
+    <div class="form-group row required">
+      <label class="col-md-3 col-form-label">{{ 'PatientCode' | localize }}</label>
+      <div class="col-md-9">
+        <input type="text" class="form-control" [(ngModel)]="patient.patientCode" name="patientCode" readonly />
+      </div>
+    </div>
+
+    <!-- First Name -->
+    <div class="form-group row required">
+      <label class="col-md-3 col-form-label">{{ 'FirstName' | localize }}</label>
+      <div class="col-md-9">
+        <input type="text" class="form-control" [(ngModel)]="patient.firstName" name="firstName" required minlength="2"
+          maxlength="50" />
+      </div>
+    </div>
+
+    <!-- Last Name -->
+    <div class="form-group row required">
+      <label class="col-md-3 col-form-label">{{ 'LastName' | localize }}</label>
+      <div class="col-md-9">
+        <input type="text" class="form-control" [(ngModel)]="patient.lastName" name="lastName" required minlength="2"
+          maxlength="50" />
+      </div>
+    </div>
+
+    <!-- Date of Birth -->
+    <div class="form-group row required">
+      <label class="col-md-3 col-form-label">{{ 'DateOfBirth' | localize }}</label>
+      <div class="col-md-9">
+        <input type="date" class="form-control" [(ngModel)]="patient.dateOfBirth" name="dateOfBirth" required />
+      </div>
+    </div>
+
+    <!-- Gender -->
+    <div class="form-group row required">
+      <label class="col-md-3 col-form-label">{{ 'Gender' | localize }}</label>
+      <div class="col-md-9">
+        <select class="form-control" [(ngModel)]="patient.gender" name="gender" required>
+          <option *ngFor="let g of genderOptions" [value]="g">{{ g }}</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Phone Number -->
+    <div class="form-group row">
+      <label class="col-md-3 col-form-label">{{ 'PhoneNumber' | localize }}</label>
+      <div class="col-md-9">
+        <input type="text" class="form-control" [(ngModel)]="patient.phoneNumber" name="phoneNumber" />
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group row required">
+      <label class="col-md-3 col-form-label">{{ 'Email' | localize }}</label>
+      <div class="col-md-9">
+        <input type="email" class="form-control" [(ngModel)]="patient.email" name="email" required />
+      </div>
+    </div>
+
+    <!-- Address -->
+    <div class="form-group row">
+      <label class="col-md-3 col-form-label">{{ 'Address' | localize }}</label>
+      <div class="col-md-9">
+        <textarea class="form-control" [(ngModel)]="patient.address" name="address" rows="3"></textarea>
+      </div>
+    </div>
+
+    <!-- Photos -->
+    <div class="form-group row">
+      <label class="col-md-3 col-form-label">{{ 'Photos' | localize }}</label>
+      <div class="col-md-9">
+
+        <!-- Display all existing & new photos -->
+        <div class="d-flex flex-wrap mb-2">
+          <div *ngFor="let img of patientImages; let i = index" class="position-relative mr-2 mb-2">
+            <img [src]="'data:image/png;base64,' + img.base64" class="img-thumbnail"
+              style="width: 100px; height: 100px;" />
+            <button type="button" class="btn btn-sm btn-danger position-absolute" style="top: -5px; right: -5px;"
+              (click)="removePhoto(i)">×</button>
+          </div>
+        </div>
+
+        <!-- Upload new photos -->
+        <input type="file" (change)="onFileSelected($event)" multiple accept="image/*" />
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Modal Footer -->
+  <abp-modal-footer [saveDisabled]="saving" [cancelDisabled]="saving"></abp-modal-footer>
+
+</form>
